@@ -1,6 +1,6 @@
 (function () {
-	Meteor.loginWithGithub = function (callback) {
-		var config = Meteor.accounts.configuration.findOne({service: 'github'});
+	Meteor.loginWithopenidc = function (callback) {
+		var config = Meteor.accounts.configuration.findOne({service: 'openidc'});
 		if (!config) {
 			callback && callback(new Meteor.accounts.ConfigError("Service not configured"));
 			return;
@@ -9,8 +9,8 @@
 		
 		var required_scope = ['user'];
 		var scope = [];
-		if (Meteor.accounts.github._options && Meteor.accounts.github._options.scope)
-			scope = Meteor.accounts.github._options.scope;
+		if (Meteor.accounts.openidc._options && Meteor.accounts.openidc._options.scope)
+			scope = Meteor.accounts.openidc._options.scope;
 		scope = _.union(scope, required_scope);
 		var flat_scope = _.map(scope, encodeURIComponent).join('+');
 		

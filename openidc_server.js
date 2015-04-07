@@ -1,9 +1,9 @@
 (function () {
-  Meteor.accounts.github.setSecret = function (secret) {
-    Meteor.accounts.github._secret = secret;
+  Meteor.accounts.openidc.setSecret = function (secret) {
+    Meteor.accounts.openidc._secret = secret;
   };
 
-  Meteor.accounts.oauth.registerService('github', 2, function(query) {
+  Meteor.accounts.oauth.registerService('openidc', 2, function(query) {
 
     var accessToken = getAccessToken(query);
     var identity = getIdentity(accessToken);
@@ -11,7 +11,7 @@
     return {
       options: {
 		  services: {
-			  github: {
+			  openidc: {
 				  id: identity.id, 
 				  accessToken: accessToken,
 				  email: identity.email
@@ -22,7 +22,7 @@
   });
 
   var getAccessToken = function (query) {
-	  var config = Meteor.accounts.configuration.findOne({service: 'github'});
+	  var config = Meteor.accounts.configuration.findOne({service: 'openidc'});
 	  if (!config)
 		  throw new Meteor.accounts.ConfigError("Service not configured");
 	  

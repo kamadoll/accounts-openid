@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:openidc_client.js">
+   </FileRef>
+   <FileRef
+      location = "group:openidc_common.js">
+   </FileRef>
+   <FileRef
+      location = "group:openidc_configure.html">
+   </FileRef>
+   <FileRef
+      location = "group:openidc_configure.js">
+   </FileRef>
+   <FileRef
+      location = "group:openidc_server.js">
+   </FileRef>
+   <FileRef
+      location = "group:package.js">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:smart.json">
+   </FileRef>
+</Workspace>

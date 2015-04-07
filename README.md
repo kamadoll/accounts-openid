@@ -1,6 +1,6 @@
 ## accounts-github
 
-Github OAuth2 login service for use with Meteor Auth
+OpenID Connect Login service for use with Meteor Auth
 
 ### Package Dependencies
 
@@ -17,6 +17,6 @@ This login service depends on the bleeding edge changes within the Meteor Auth b
 3. Call `Meteor.loginWithGithub();`
 
 ### Credits
-
+* Further based on Jamie Atkinsons work... https://github.com/Jabbslad/accounts-github
 * Shamelessly based upon [@possibilities](https://github.com/possibilities) Google OAuth2 login service
 * [@bradens](https://github.com/bradens) fixes for latest `auth` branch changes and support for configurable dialog. Thanks man!

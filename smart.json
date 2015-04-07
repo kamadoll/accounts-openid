@@ -1,8 +1,8 @@
 {
-  "name": "accounts-github",
-  "description": "Github OAuth2 login service for use with Meteor Auth",
-  "homepage": "https://github.com/Jabbslad/accounts-github",
-  "author": "Jamie Atkinson <jabbslad@gmail.com>",
+  "name": "accounts-openidc",
+  "description": "Open ID Connect login service for use with Meteor Auth",
+  "homepage": "https://github.com/kamadoll/accounts-openidc",
+  "author": "Shyam Kamadolli <skam@boun.cr>",
   "version": "0.1.0",
-  "git": "https://github.com/Jabbslad/accounts-github.git"
+  "git": "https://github.com/kamadoll/accounts-openid-generic.git"
 }
